@@ -4,4 +4,5 @@ class Teacher:
         self.name:str = _name
         self.subject:int = _subject
         self.type:str = _type
-        self.days:list = _days
+        self.can:dict = _days
+
