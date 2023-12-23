@@ -6,20 +6,15 @@ from .Env import Env
 
 class DatabaseTableExtractor:
     def __init__(self):
-        self.tables = ["rooms", "subjects", "groups", "teachers"]
         paths = Env().get_paths()
-        self.dbpath = paths["db"]
-        self.rooms_path = paths["rooms"]
-        self.subjects_path = paths["subjects"]
-        self.groups_path = paths["groups"]
-        self.teachers_path = paths["teachers"]
-        self.conn = self.__create_connection()
+        self.__dbpath = paths["db"]
+        self.__conn = self.__create_connection()
 
     def __create_connection(self):
-        return sqlite3.connect(self.dbpath)
+        return sqlite3.connect(self.__dbpath)
 
     def __get_table(self, table):
-        return pd.read_sql_query(f"SELECT * FROM {table}", self.conn)
+        return pd.read_sql_query(f"SELECT * FROM {table}", self.__conn)
 
     def __get_table_json(self, table):
         return self.__get_table(table).to_json(orient="records")
@@ -46,5 +41,7 @@ class DatabaseTableExtractor:
     def groups_json(self):
         return self.__get_table_json("groups")
 
-    def teachers_json(self):
+    def teachers_json(self) -> pd.DataFrame:
         return self.__get_table_json("teachers")
+
+    # def __get_joined(self):

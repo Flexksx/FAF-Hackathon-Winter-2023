@@ -37,8 +37,8 @@ id,name,theory,seminar,lab,project,year,semester
 36,L. Engleza2 (FAF),0,30,0,,1,2
 37,L. Română,0,30,0,,1,1
 38,L. Română 2,0,30,0,,1,2
-39,L. Engleză 1-2,0,30,0,,1,"1,2"
-40,Ed. Fizică 1-2,0,30,0,,1,"1,2"
+39,L. Engleză 1,0,30,0,,1,1
+40,Ed. Fizică 1,0,30,0,,1,1
 41,CDE,45,0,30,,2,3
 42,POO,30,15,30,,2,3
 43,MN,30,0,15,,2,3
@@ -116,3 +116,5 @@ id,name,theory,seminar,lab,project,year,semester
 115,Ed. Fizică3,0,30,0,,2,3
 116,Ed. Fizică4,0,30,0,,2,4
 117,Biofizica,30,0,30,,2,3
+118,L. Engleză 2,0,30,0,,1,2
+119,Ed. Fizică 2,0,30,0,,1,2

@@ -8,18 +8,18 @@ class DatabaseTableCreator:
     def __init__(self):
         self.tables = ["rooms", "subjects", "groups", "teachers"]
         paths = Env().get_paths()
-        self.dbpath = paths["db"]
-        self.rooms_path = paths["rooms"]
-        self.subjects_path = paths["subjects"]
-        self.groups_path = paths["groups"]
-        self.teachers_path = paths["teachers"]
-        self.conn = self.__create_connection()
+        self.__dbpath = paths["db"]
+        self.__rooms_path = paths["rooms"]
+        self.__subjects__path = paths["subjects"]
+        self.__groups_path = paths["groups"]
+        self.__teachers_path = paths["teachers"]
+        self.__conn = self.__create_connection()
 
     def __create_connection(self) -> sqlite3.Connection:
         """ create a database connection to a SQLite database """
         conn = None
         try:
-            conn = sqlite3.connect(self.dbpath)
+            conn = sqlite3.connect(self.__dbpath)
             # print("Connected to SQLite version: ", sqlite3.version)
             return conn
         except sqlite3.Error as e:
@@ -43,7 +43,7 @@ class DatabaseTableCreator:
         cursor.close()
 
     def __insert_rooms(self) -> None:
-        roomsdf = pd.read_csv(self.rooms_path)
+        roomsdf = pd.read_csv(self.__rooms_path)
         roomsdf.rename(columns={
                        "id ": "id", "nr_persons": "capacity", "is_lab_cab": "is_lab"}, inplace=True)
         roomsdf["is_lab"] = roomsdf["is_lab"].astype(bool)
@@ -51,7 +51,8 @@ class DatabaseTableCreator:
         roomsdf["capacity"] = roomsdf["capacity"].astype(int)
         print(roomsdf.columns)
         try:
-            roomsdf.to_sql("rooms", self.conn, if_exists="append", index=False)
+            roomsdf.to_sql("rooms", self.__conn,
+                           if_exists="append", index=False)
             print("Inserted data into rooms table")
         except sqlite3.Error as e:
             print(e)
@@ -108,7 +109,7 @@ class DatabaseTableCreator:
             sat7 BOOLEAN NOT NULL,
             FOREIGN KEY (subject) REFERENCES subjects(id)
         )"""
-        cursor = self.conn.cursor()
+        cursor = self.__conn.cursor()
         try:
             cursor.execute(query)
             print("Created teachers table")
@@ -126,7 +127,7 @@ class DatabaseTableCreator:
             year INT,
             semester INT
         )"""
-        cursor = self.conn.cursor()
+        cursor = self.__conn.cursor()
         try:
             cursor.execute(query)
             print("Created subjects table")
@@ -140,7 +141,7 @@ class DatabaseTableCreator:
             language TEXT,
             students INT
         )"""
-        cursor = self.conn.cursor()
+        cursor = self.__conn.cursor()
         try:
             cursor.execute(query)
             print("Created groups table")
@@ -154,7 +155,7 @@ class DatabaseTableCreator:
             FOREIGN KEY (group_id) REFERENCES groups(id),
             FOREIGN KEY (subject_id) REFERENCES subjects(id)
         )"""
-        cursor = self.conn.cursor()
+        cursor = self.__conn.cursor()
         try:
             cursor.execute(query)
             print("Created groups_subjects table")
@@ -162,43 +163,51 @@ class DatabaseTableCreator:
             print(e)
 
     def __insert_groups_subjects(self):
-        groups_df = pd.read_csv(self.groups_path)
+        groups_df = pd.read_csv(self.__groups_path)
         groups_subjects_df = pd.DataFrame(columns=["group_id", "subject_id"])
         print(groups_df.columns)
         for group in groups_df.iterrows():
             subject_ids = group[1]["subject_ids"].split(",")
             group_id = group[1]["id"]
             for subject_id in subject_ids:
-                groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
-                    {"group_id": [group_id], "subject_id": subject_id})])
+                if subject_id == 39:
+                    groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
+                        {"group_id": [group_id], "subject_id": 118})])
+                if subject_id == 40:
+                    groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
+                        {"group_id": [group_id], "subject_id": 119})])
+                else:
+                    groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
+                        {"group_id": [group_id], "subject_id": subject_id})])
         try:
             groups_subjects_df.to_sql(
-                "groups_subjects", self.conn, if_exists="append", index=False)
+                "groups_subjects", self.__conn, if_exists="append", index=False)
             print("Inserted data into groups_subjects table")
         except sqlite3.Error as e:
             print(e)
 
     def __insert_groups(self):
-        groups_df = pd.read_csv(self.groups_path)
+        groups_df = pd.read_csv(self.__groups_path)
         groups_df.drop(columns=["subject_ids"], inplace=True)
         try:
-            groups_df.to_sql("groups", self.conn,
+            groups_df.to_sql("groups", self.__conn,
                              if_exists="append", index=False)
             print("Inserted data into groups table")
         except sqlite3.Error as e:
             print(e)
 
     def __insert_subjects(self):
-        subjects_df = pd.read_csv(self.subjects_path)
+        subjects_df = pd.read_csv(self.__subjects__path)
+        subjects_df
         try:
-            subjects_df.to_sql("subjects", self.conn,
+            subjects_df.to_sql("subjects", self.__conn,
                                if_exists="append", index=False)
             print("Inserted data into subjects table")
         except sqlite3.Error as e:
             print(e)
 
     def __insert_teachers(self):
-        teachers_df = pd.read_csv(self.teachers_path)
+        teachers_df = pd.read_csv(self.__teachers_path)
         for index, teacher in teachers_df.iterrows():
             if teacher["type"] == "TEOR,PRACT":
                 teachers_df.at[index, "theory"] = 1
@@ -257,14 +266,14 @@ class DatabaseTableCreator:
             "sat_per_7": "sat7"
         }, inplace=True)
         try:
-            teachers_df.to_sql("teachers", self.conn,
+            teachers_df.to_sql("teachers", self.__conn,
                                if_exists="append", index=False)
             print("Inserted data into teachers table")
         except sqlite3.Error as e:
             print(e)
 
     def drop_all_tables(self):
-        cursor = self.conn.cursor()
+        cursor = self.__conn.cursor()
         for table in self.tables:
             try:
                 cursor.execute(f"DROP TABLE {table}")
@@ -274,7 +283,7 @@ class DatabaseTableCreator:
         cursor.close()
 
     def create_all_tables(self):
-        self.__create_rooms_table(self.conn)
+        self.__create_rooms_table(self.__conn)
         self.__create_teachers_table()
         self.__create_subjects_table()
         self.__create_groups_table()
