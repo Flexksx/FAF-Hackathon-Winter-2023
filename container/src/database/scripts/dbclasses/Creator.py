@@ -135,7 +135,7 @@ class DatabaseTableCreator:
             print(e)
 
     def __create_groups_table(self):
-        query = """CREATE TABLE IF NOT EXISTS groups (
+        query = """CREATE TABLE IF NOT EXISTS studentgroups (
             id INT PRIMARY KEY,
             name TEXT,
             language TEXT,
@@ -162,7 +162,7 @@ class DatabaseTableCreator:
         except sqlite3.Error as e:
             print(e)
 
-    def __insert_groups_subjects(self):
+    def __insert_studentgroups_subjects(self):
         groups_df = pd.read_csv(self.__groups_path)
         groups_subjects_df = pd.DataFrame(columns=["group_id", "subject_id"])
         print(groups_df.columns)
@@ -190,7 +190,7 @@ class DatabaseTableCreator:
         groups_df = pd.read_csv(self.__groups_path)
         groups_df.drop(columns=["subject_ids"], inplace=True)
         try:
-            groups_df.to_sql("groups", self.__conn,
+            groups_df.to_sql("studentgroups", self.__conn,
                              if_exists="append", index=False)
             print("Inserted data into groups table")
         except sqlite3.Error as e:
