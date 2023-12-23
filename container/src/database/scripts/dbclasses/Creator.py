@@ -162,7 +162,7 @@ class DatabaseTableCreator:
         except sqlite3.Error as e:
             print(e)
 
-    def __insert_studentgroups_subjects(self):
+    def __insert_groups_subjects(self):
         groups_df = pd.read_csv(self.__groups_path)
         groups_subjects_df = pd.DataFrame(columns=["group_id", "subject_id"])
         print(groups_df.columns)
