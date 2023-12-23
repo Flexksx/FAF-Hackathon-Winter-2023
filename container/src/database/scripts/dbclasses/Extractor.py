@@ -13,7 +13,7 @@ class DatabaseTableExtractor:
     def __create_connection(self):
         return sqlite3.connect(self.__dbpath)
 
-    def __get_table(self, table):
+    def __get_table(self, table) -> pd.DataFrame:
         return pd.read_sql_query(f"SELECT * FROM {table}", self.__conn)
 
     def __get_table_json(self, table):
