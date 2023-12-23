@@ -1,5 +1,5 @@
 from dbutils import *
+from dbutils import Database
 
+db = Database()
 
-conn = create_connection()
-create_rooms_table(conn)
