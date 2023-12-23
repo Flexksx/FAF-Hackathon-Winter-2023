@@ -6,7 +6,8 @@ from .Env import Env
 
 class DatabaseTableCreator:
     def __init__(self):
-        self.tables = ["rooms", "subjects", "groups", "teachers"]
+        self.tables = ["rooms", "subjects",
+                       "studentgroups", "teachers", "groups_subjects"]
         paths = Env().get_paths()
         self.__dbpath = paths["db"]
         self.__rooms_path = paths["rooms"]
@@ -152,7 +153,7 @@ class DatabaseTableCreator:
         query = """CREATE TABLE IF NOT EXISTS groups_subjects (
             group_id INT,
             subject_id INT,
-            FOREIGN KEY (group_id) REFERENCES groups(id),
+            FOREIGN KEY (group_id) REFERENCES studentgroups(id),
             FOREIGN KEY (subject_id) REFERENCES subjects(id)
         )"""
         cursor = self.__conn.cursor()
@@ -170,15 +171,15 @@ class DatabaseTableCreator:
             subject_ids = group[1]["subject_ids"].split(",")
             group_id = group[1]["id"]
             for subject_id in subject_ids:
+                subject_id = subject_id.strip()
                 if subject_id == 39:
                     groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
                         {"group_id": [group_id], "subject_id": 118})])
-                if subject_id == 40:
+                if subject_id == "40":
                     groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
                         {"group_id": [group_id], "subject_id": 119})])
-                else:
-                    groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
-                        {"group_id": [group_id], "subject_id": subject_id})])
+                groups_subjects_df = pd.concat([groups_subjects_df, pd.DataFrame(
+                    {"group_id": [group_id], "subject_id": subject_id})])
         try:
             groups_subjects_df.to_sql(
                 "groups_subjects", self.__conn, if_exists="append", index=False)
