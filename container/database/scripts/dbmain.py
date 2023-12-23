@@ -1,5 +1,5 @@
-from dbutils import *
-from dbutils import Database
+from Database import Database
 
 db = Database()
 
+db.reload_tables()
