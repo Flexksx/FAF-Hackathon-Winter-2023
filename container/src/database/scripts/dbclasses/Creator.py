@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from .Env import Env
 
+
 class DatabaseTableCreator:
     def __init__(self):
         self.tables = ["rooms", "subjects", "groups", "teachers"]
@@ -13,7 +14,6 @@ class DatabaseTableCreator:
         self.groups_path = paths["groups"]
         self.teachers_path = paths["teachers"]
         self.conn = self.__create_connection()
-
 
     def __create_connection(self) -> sqlite3.Connection:
         """ create a database connection to a SQLite database """
@@ -61,7 +61,9 @@ class DatabaseTableCreator:
             id INT PRIMARY KEY,
             name TEXT NOT NULL,
             subject INT NOT NULL,
-            type TEXT NOT NULL,
+            theory BOOLEAN,
+            seminar BOOLEAN,
+            lab BOOLEAN,
             mon1 BOOLEAN NOT NULL,
             mon2 BOOLEAN NOT NULL,
             mon3 BOOLEAN NOT NULL,
@@ -197,11 +199,20 @@ class DatabaseTableCreator:
 
     def __insert_teachers(self):
         teachers_df = pd.read_csv(self.teachers_path)
+        for index, teacher in teachers_df.iterrows():
+            if teacher["type"] == "TEOR,PRACT":
+                teachers_df.at[index, "theory"] = 1
+                teachers_df.at[index, "seminar"] = 1
+                teachers_df.at[index, "lab"] = 0
+            else:
+                teachers_df.at[index, "theory"] = 0
+                teachers_df.at[index, "seminar"] = 0
+                teachers_df.at[index, "lab"] = 1
+        teachers_df.drop(columns=["type"], inplace=True)
         teachers_df.rename(columns={
             "id": "id",
             "name": "name",
             "subject": "subject",
-            "type": "type",
             "mon_per_1": "mon1",
             "mon_per_2": "mon2",
             "mon_per_3": "mon3",
