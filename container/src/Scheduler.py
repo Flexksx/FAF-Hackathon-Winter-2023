@@ -10,7 +10,7 @@ subjects_df, teachers_df, student_group = get_needed_dfs()
 
 
 
-days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"]
+days = ["mon", "tue", "wed", "thu", "fri", "sat"]
 times = [f'{day}{i}' for day in days for i in range(1, 8)]
 periods = range(1, 8)
 
@@ -21,4 +21,12 @@ empty_schedule_df = pd.DataFrame(index=periods, columns=days)
 # Optionally, fill the DataFrame with some initial values (e.g., placeholders or NaN)
 empty_schedule_df = empty_schedule_df.fillna('')
 
-print(empty_schedule_df)
+for time in times:
+    available_teachers = []
+    for teacher in teachers_df.values:
+        if teacher[time] == 1:
+            available_teachers.append(teacher[0])
+
+
+
+print(empty_schedule_df.to_string())
