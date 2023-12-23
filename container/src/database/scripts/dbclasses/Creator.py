@@ -20,7 +20,7 @@ class DatabaseTableCreator:
         conn = None
         try:
             conn = sqlite3.connect(self.dbpath)
-            print("Connected to SQLite version: ", sqlite3.version)
+            # print("Connected to SQLite version: ", sqlite3.version)
             return conn
         except sqlite3.Error as e:
             print(e)

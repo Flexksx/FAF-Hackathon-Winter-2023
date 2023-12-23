@@ -1,2 +1,5 @@
 import pandas as pd
-from dbclasses.Database import Database
+from database.scripts.dbclasses.Database import Database
+
+teachers_df = Database().extract.teachers()
+
