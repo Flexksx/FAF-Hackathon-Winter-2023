@@ -13,12 +13,14 @@ class DatabaseTableExtractor:
     def __create_connection(self):
         return sqlite3.connect(self.__dbpath)
 
-    def __get_table(self, table):
+    def __get_table(self, table) -> pd.DataFrame:
         return pd.read_sql_query(f"SELECT * FROM {table}", self.__conn)
 
     def __get_table_json(self, table):
         return self.__get_table(table).to_json(orient="records")
 
+    def group_subjects_maptable(self):
+        return self.__get_table("groups_subjects")
 
     def rooms(self):
         return self.__get_table("rooms")
@@ -27,7 +29,7 @@ class DatabaseTableExtractor:
         return self.__get_table("subjects")
 
     def groups(self):
-        return self.__get_table("groups")
+        return self.__get_table("studentgroups")
 
     def teachers(self):
         return self.__get_table("teachers")
@@ -44,4 +46,25 @@ class DatabaseTableExtractor:
     def teachers_json(self) -> pd.DataFrame:
         return self.__get_table_json("teachers")
 
-    # def __get_joined(self):
+    def join(self, table1, table2, on):
+        return pd.read_sql_query(f"SELECT * FROM {table1} JOIN {table2} ON {on}", self.__conn)
+
+    def groups_subjects_joined(self):
+        query = """
+        SELECT sg.name AS groupname,
+        sg.language AS language,
+        sg.students AS students,
+        s.name AS subjectname,
+        s.theory AS theory,
+        s.seminar AS seminar,
+        s.lab AS lab,
+        s.project AS project,
+        s.year AS year,
+        s.semester AS semester
+        FROM studentgroups AS sg
+        INNER JOIN groups_subjects AS gs
+        ON sg.id = gs.group_id
+        INNER JOIN subjects AS s
+        ON gs.subject_id = s.id
+        """
+        return pd.read_sql_query(query, self.__conn)

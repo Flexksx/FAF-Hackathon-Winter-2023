@@ -121,10 +121,10 @@ class DatabaseTableCreator:
         query = """CREATE TABLE IF NOT EXISTS subjects (
             id INT PRIMARY KEY,
             name TEXT,
-            theory INT,
-            seminar INT,
-            lab INT,
-            project INT,
+            theory INT DEFAULT 0,
+            seminar INT DEFAULT 0,
+            lab INT DEFAULT 0,
+            project INT DEFAULT 0,
             year INT,
             semester INT
         )"""
