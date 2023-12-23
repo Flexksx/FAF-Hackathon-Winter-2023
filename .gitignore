@@ -1,4 +1,8 @@
 .vscode/
 .idea/
 container/database/scripts/.env
+<<<<<<< HEAD
 container/database/Source.db
+=======
+
+>>>>>>> 1600c9cc3571a932c1fbb2eb3a987d2dfac396b4
