@@ -60,7 +60,7 @@ class DatabaseTableCreator:
         query = """CREATE TABLE IF NOT EXISTS teachers (
             id INT PRIMARY KEY,
             name TEXT NOT NULL,
-            subject TEXT NOT NULL,
+            subject INT NOT NULL,
             type TEXT NOT NULL,
             mon1 BOOLEAN NOT NULL,
             mon2 BOOLEAN NOT NULL,
@@ -103,7 +103,8 @@ class DatabaseTableCreator:
             sat4 BOOLEAN NOT NULL,
             sat5 BOOLEAN NOT NULL,
             sat6 BOOLEAN NOT NULL,
-            sat7 BOOLEAN NOT NULL
+            sat7 BOOLEAN NOT NULL,
+            FOREIGN KEY (subject) REFERENCES subjects(id)
         )"""
         cursor = self.conn.cursor()
         try:

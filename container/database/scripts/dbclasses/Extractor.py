@@ -48,5 +48,3 @@ class DatabaseTableExtractor:
 
     def teachers_json(self):
         return self.__get_table_json("teachers")
-
-
