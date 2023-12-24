@@ -20,43 +20,39 @@ class ScheduleSimulatedAnnealing:
     def evaluate_schedule(self, schedule):
         return schedule.apply(lambda x: x.str.startswith(('c', 's', 'l', 'p')).sum(), axis=0).sum()
 
-    def __validate_teacher(self, teachers_df, lesson, groupname):
-        if teachers_df.loc[teachers_df["id"] == lesson["teacher_id"]]["name"].values[0] in groupname:
-            return True
-        return False
-
-    def generate_neighbour(self, current_schedule):
-        neighbour_schedule = copy.deepcopy(current_schedule)
-
-        for group in self.groupnames:
-            # Filter empty and non-empty slots only for the current group
-            empty_slots = neighbour_schedule.loc[neighbour_schedule[group] == ''].index.tolist(
-            )
-            non_empty_slots = neighbour_schedule.loc[neighbour_schedule[group] != ''].index.tolist(
-            )
-
-            # Randomly choose an empty and a non-empty slot for the current group
-            random_empty_slot = random.choice(empty_slots)
-            random_non_empty_slot = random.choice(non_empty_slots)
-
-            # Swap the values between the empty and non-empty slots for the current group
-            neighbour_schedule.at[random_empty_slot,
-                                  group] = neighbour_schedule.at[random_non_empty_slot, group]
-            neighbour_schedule.at[random_non_empty_slot, group] = ''
-
-        return neighbour_schedule
 
     # def generate_neighbour(self, current_schedule):
-    #     # Your neighbourhood generation logic goes here
-    #     # Generate a neighbouring solution for the current schedule
-    #     # This could involve swapping or modifying lessons
     #     neighbour_schedule = copy.deepcopy(current_schedule)
-    #     # For simplicity, swap two random lessons in a random day
-    #     day = random.choice(neighbour_schedule.columns)
-    #     lesson_indices = random.sample(range(len(neighbour_schedule)), 2)
-    #     neighbour_schedule.iloc[lesson_indices, neighbour_schedule.columns.get_loc(day)] = \
-    #         current_schedule.iloc[lesson_indices[::-1], current_schedule.columns.get_loc(day)].values
+
+    #     for group in self.groupnames:
+    #         # Filter empty and non-empty slots only for the current group
+    #         empty_slots = neighbour_schedule.loc[neighbour_schedule[group] == ''].index.tolist(
+    #         )
+    #         non_empty_slots = neighbour_schedule.loc[neighbour_schedule[group] != ''].index.tolist(
+    #         )
+
+    #         # Randomly choose an empty and a non-empty slot for the current group
+    #         random_empty_slot = random.choice(empty_slots)
+    #         random_non_empty_slot = random.choice(non_empty_slots)
+
+    #         # Swap the values between the empty and non-empty slots for the current group
+    #         neighbour_schedule.at[random_empty_slot,
+    #                               group] = neighbour_schedule.at[random_non_empty_slot, group]
+    #         neighbour_schedule.at[random_non_empty_slot, group] = ''
+
     #     return neighbour_schedule
+
+    def generate_neighbour(self, current_schedule):
+        # Your neighbourhood generation logic goes here
+        # Generate a neighbouring solution for the current schedule
+        # This could involve swapping or modifying lessons
+        neighbour_schedule = copy.deepcopy(current_schedule)
+        # For simplicity, swap two random lessons in a random day
+        day = random.choice(neighbour_schedule.columns)
+        lesson_indices = random.sample(range(len(neighbour_schedule)), 2)
+        neighbour_schedule.iloc[lesson_indices, neighbour_schedule.columns.get_loc(day)] = \
+            current_schedule.iloc[lesson_indices[::-1], current_schedule.columns.get_loc(day)].values
+        return neighbour_schedule
 
     def acceptance_probability(self, current_cost, neighbour_cost, temperature):
         if neighbour_cost < current_cost:
@@ -113,10 +109,9 @@ class ScheduleSimulatedAnnealing:
         return json.dumps(formatted_schedule)
 
 # Example usage:
-# groupnames = ["FAF-223", "FAF-221", "FAF-222", "FAF-233"]
-# semesters = [3, 3, 3, 1]
-# schedule_simulated_annealing = ScheduleSimulatedAnnealing(
-#     groupnames, semesters)
-# optimal_schedule = schedule_simulated_annealing.anneal()
-# print(optimal_schedule)
-# optimal_schedule.to_json("schedule.json")
+groupnames = ["FAF-223", "FAF-221", "FAF-222", "FAF-233"]
+semesters = [3, 3, 3, 1]
+schedule_simulated_annealing = ScheduleSimulatedAnnealing(
+    groupnames, semesters)
+optimal_schedule = schedule_simulated_annealing.anneal()
+print(optimal_schedule)
