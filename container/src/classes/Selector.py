@@ -79,8 +79,12 @@ class Selector:
         for i in range(len(groupnames)):
             s,t,g,tsj = self.get_group_dfs(
                 groupnames[i],semester[i])
+            groups_dfs[groupnames[i]]["nr"]=self.__db.extract.groups().loc[self.__db.extract.groups()["name"]==groupnames[i]]["students"].values[0]
             groups_dfs[groupnames[i]]["subjects"]=s
             groups_dfs[groupnames[i]]["teachers"]=t
             groups_dfs[groupnames[i]]["group"]=g
             groups_dfs[groupnames[i]]["map"]=tsj
         return groups_dfs
+
+    def get_rooms_df(self):
+        return self.__db.extract.rooms()
