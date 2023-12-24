@@ -1,4 +1,4 @@
 .vscode/
 .idea/
-container/database/scripts/.env
-
+# /container/database/scripts/dbclasses/env
+# /container/database/Source.db
