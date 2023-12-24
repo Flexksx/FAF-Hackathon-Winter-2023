@@ -7,9 +7,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "l",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
                 "type": "c",
@@ -22,14 +22,51 @@
                 "teacher": ""
             },
             "5": {
+                "type": "s",
+                "name": "GC (FAF)",
+                "teacher": "Alison Friedman"
+            },
+            "6": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
-            "6": {
-                "type": "l",
+            "7": {
+                "type": "p",
+                "name": "BDA (FAF)",
+                "teacher": "Ophelia Singleton"
+            }
+        },
+        "Tuesday": {
+            "1": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "2": {
+                "type": "c",
+                "name": "GC (FAF)",
+                "teacher": "Alison Friedman"
+            },
+            "3": {
+                "type": "c",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
+            },
+            "4": {
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
+            },
+            "5": {
+                "type": "s",
                 "name": "BD (FAF)",
                 "teacher": "Darwin Crawford"
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -37,7 +74,7 @@
                 "teacher": ""
             }
         },
-        "Tuesday": {
+        "Wednesday": {
             "1": {
                 "type": "",
                 "name": "",
@@ -49,9 +86,9 @@
                 "teacher": ""
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "l",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "4": {
                 "type": "",
@@ -59,9 +96,9 @@
                 "teacher": ""
             },
             "5": {
-                "type": "c",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "l",
+                "name": "BD (FAF)",
+                "teacher": "Darwin Crawford"
             },
             "6": {
                 "type": "",
@@ -69,12 +106,12 @@
                 "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "BD (FAF)",
-                "teacher": "Darwin Crawford"
+                "type": "s",
+                "name": "POO (FAF)",
+                "teacher": "Landyn Curry"
             }
         },
-        "Wednesday": {
+        "Thursday": {
             "1": {
                 "type": "",
                 "name": "",
@@ -86,46 +123,9 @@
                 "teacher": "Landyn Curry"
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
                 "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
-            },
-            "7": {
-                "type": "p",
-                "name": "BDA (FAF)",
-                "teacher": "Ophelia Singleton"
-            }
-        },
-        "Thursday": {
-            "1": {
-                "type": "s",
-                "name": "GC (FAF)",
-                "teacher": "Alison Friedman"
-            },
-            "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "4": {
                 "type": "",
@@ -155,9 +155,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "s",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
                 "type": "",
@@ -170,19 +170,19 @@
                 "teacher": ""
             },
             "5": {
-                "type": "s",
-                "name": "POO (FAF)",
-                "teacher": "Landyn Curry"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
-                "type": "s",
-                "name": "BD (FAF)",
-                "teacher": "Darwin Crawford"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "c",
-                "name": "GC (FAF)",
-                "teacher": "Alison Friedman"
+                "name": "BD (FAF)",
+                "teacher": "Darwin Crawford"
             }
         }
     },
@@ -194,9 +194,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "l",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "3": {
                 "type": "",
@@ -204,19 +204,19 @@
                 "teacher": ""
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "5": {
-                "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
-            },
-            "6": {
-                "type": "s",
+                "type": "c",
                 "name": "BD (FAF)",
                 "teacher": "Darwin Crawford"
+            },
+            "6": {
+                "type": "c",
+                "name": "GC (FAF)",
+                "teacher": "Alison Friedman"
             },
             "7": {
                 "type": "",
@@ -226,34 +226,34 @@
         },
         "Tuesday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "DPI (FAF)",
+                "teacher": "Xander Bennett"
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "POO (FAF)",
+                "teacher": "Landyn Curry"
             },
             "3": {
+                "type": "s",
+                "name": "GC (FAF)",
+                "teacher": "Alison Friedman"
+            },
+            "4": {
                 "type": "",
                 "name": "",
                 "teacher": ""
-            },
-            "4": {
-                "type": "l",
-                "name": "BD (FAF)",
-                "teacher": "Darwin Crawford"
             },
             "5": {
                 "type": "c",
-                "name": "BD (FAF)",
-                "teacher": "Darwin Crawford"
+                "name": "POO (FAF)",
+                "teacher": "Landyn Curry"
             },
             "6": {
-                "type": "c",
-                "name": "GC (FAF)",
-                "teacher": "Alison Friedman"
+                "type": "p",
+                "name": "BDA (FAF)",
+                "teacher": "Ophelia Singleton"
             },
             "7": {
                 "type": "",
@@ -263,9 +263,9 @@
         },
         "Wednesday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "2": {
                 "type": "",
@@ -278,9 +278,9 @@
                 "teacher": ""
             },
             "4": {
-                "type": "s",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "5": {
                 "type": "",
@@ -293,9 +293,9 @@
                 "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         },
         "Thursday": {
@@ -305,14 +305,14 @@
                 "teacher": ""
             },
             "2": {
-                "type": "s",
-                "name": "POO (FAF)",
-                "teacher": "Landyn Curry"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
-                "type": "s",
-                "name": "GC (FAF)",
-                "teacher": "Alison Friedman"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "4": {
                 "type": "",
@@ -330,9 +330,9 @@
                 "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "POO (FAF)",
-                "teacher": "Landyn Curry"
+                "type": "l",
+                "name": "BD (FAF)",
+                "teacher": "Darwin Crawford"
             }
         },
         "Friday": {
@@ -347,14 +347,14 @@
                 "teacher": ""
             },
             "3": {
-                "type": "p",
-                "name": "BDA (FAF)",
-                "teacher": "Ophelia Singleton"
+                "type": "s",
+                "name": "BD (FAF)",
+                "teacher": "Darwin Crawford"
             },
             "4": {
-                "type": "l",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
             },
             "5": {
                 "type": "",
@@ -362,9 +362,9 @@
                 "teacher": ""
             },
             "6": {
-                "type": "c",
-                "name": "DPI (FAF)",
-                "teacher": "Xander Bennett"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -376,14 +376,14 @@
     "FAF-222": {
         "Monday": {
             "1": {
-                "type": "s",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "c",
+                "name": "POO (FAF)",
+                "teacher": "Landyn Curry"
             },
             "2": {
-                "type": "l",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
                 "type": "",
@@ -391,24 +391,24 @@
                 "teacher": ""
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "5": {
-                "type": "c",
-                "name": "DPI (FAF)",
-                "teacher": "Xander Bennett"
-            },
-            "6": {
-                "type": "c",
+                "type": "s",
                 "name": "GC (FAF)",
                 "teacher": "Alison Friedman"
             },
-            "7": {
+            "5": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "7": {
+                "type": "s",
+                "name": "BD (FAF)",
+                "teacher": "Darwin Crawford"
             }
         },
         "Tuesday": {
@@ -418,9 +418,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "c",
-                "name": "POO (FAF)",
-                "teacher": "Landyn Curry"
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
             },
             "3": {
                 "type": "",
@@ -428,9 +428,9 @@
                 "teacher": ""
             },
             "4": {
-                "type": "c",
-                "name": "BD (FAF)",
-                "teacher": "Darwin Crawford"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "5": {
                 "type": "",
@@ -451,18 +451,18 @@
         "Wednesday": {
             "1": {
                 "type": "s",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
+            },
+            "2": {
+                "type": "l",
                 "name": "BD (FAF)",
                 "teacher": "Darwin Crawford"
             },
-            "2": {
-                "type": "p",
-                "name": "BDA (FAF)",
-                "teacher": "Ophelia Singleton"
-            },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "GC (FAF)",
+                "teacher": "Alison Friedman"
             },
             "4": {
                 "type": "",
@@ -470,9 +470,9 @@
                 "teacher": ""
             },
             "5": {
-                "type": "s",
-                "name": "GC (FAF)",
-                "teacher": "Alison Friedman"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
                 "type": "",
@@ -492,24 +492,24 @@
                 "teacher": ""
             },
             "2": {
-                "type": "l",
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "c",
+                "name": "DPI (FAF)",
+                "teacher": "Xander Bennett"
+            },
+            "4": {
+                "type": "c",
                 "name": "BD (FAF)",
                 "teacher": "Darwin Crawford"
             },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
             "5": {
-                "type": "s",
-                "name": "POO (FAF)",
-                "teacher": "Landyn Curry"
+                "type": "c",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "6": {
                 "type": "",
@@ -517,9 +517,9 @@
                 "teacher": ""
             },
             "7": {
-                "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         },
         "Friday": {
@@ -529,14 +529,14 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "l",
+                "name": "AMS (FAF)",
+                "teacher": "Aubree Daniels"
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "p",
+                "name": "BDA (FAF)",
+                "teacher": "Ophelia Singleton"
             },
             "4": {
                 "type": "",
@@ -549,9 +549,9 @@
                 "teacher": ""
             },
             "6": {
-                "type": "c",
-                "name": "AMS (FAF)",
-                "teacher": "Aubree Daniels"
+                "type": "s",
+                "name": "POO (FAF)",
+                "teacher": "Landyn Curry"
             },
             "7": {
                 "type": "",
@@ -568,9 +568,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "EIA (FAF)",
+                "teacher": "Jude Church"
             },
             "3": {
                 "type": "",
@@ -578,61 +578,61 @@
                 "teacher": ""
             },
             "4": {
-                "type": "s",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "c",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "5": {
-                "type": "c",
-                "name": "AM1 (FAF)",
-                "teacher": "Savannah Guzman"
-            },
-            "6": {
-                "type": "c",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
-            },
-            "7": {
-                "type": "s",
-                "name": "AM1 (FAF)",
-                "teacher": "Savannah Guzman"
-            }
-        },
-        "Tuesday": {
-            "1": {
                 "type": "c",
                 "name": "ALGA (FAF)",
                 "teacher": "Tommy Grant"
             },
-            "2": {
-                "type": "l",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
-            },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "s",
-                "name": "Ed. Fizic\u0103 1",
-                "teacher": "Madilyn Ramsey"
-            },
-            "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
             "6": {
-                "type": "s",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            }
+        },
+        "Tuesday": {
+            "1": {
+                "type": "l",
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "c",
+                "name": "AM1 (FAF)",
+                "teacher": "Savannah Guzman"
+            },
+            "4": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "5": {
+                "type": "s",
+                "name": "AM1 (FAF)",
+                "teacher": "Savannah Guzman"
+            },
+            "6": {
+                "type": "c",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
+            },
+            "7": {
+                "type": "s",
+                "name": "Ed. Fizic\u0103 1",
+                "teacher": "Madilyn Ramsey"
             }
         },
         "Wednesday": {
@@ -642,9 +642,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "l",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "s",
+                "name": "L. Engleza (FAF)",
+                "teacher": "Lucille Archer"
             },
             "3": {
                 "type": "",
@@ -652,9 +652,9 @@
                 "teacher": ""
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
             },
             "5": {
                 "type": "",
@@ -674,34 +674,34 @@
         },
         "Thursday": {
             "1": {
-                "type": "s",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
-            },
-            "2": {
-                "type": "l",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
-            },
-            "3": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
-            "4": {
+            "2": {
                 "type": "c",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
+            },
+            "3": {
+                "type": "l",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
+            },
+            "4": {
+                "type": "p",
+                "name": "PCAIT (FAF)",
+                "teacher": "Alaina Griffin"
             },
             "5": {
-                "type": "s",
-                "name": "L. Engleza (FAF)",
-                "teacher": "Lucille Archer"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
-                "type": "c",
-                "name": "EIA (FAF)",
-                "teacher": "Jude Church"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -711,24 +711,24 @@
         },
         "Friday": {
             "1": {
-                "type": "c",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "l",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "3": {
-                "type": "p",
-                "name": "PCAIT (FAF)",
-                "teacher": "Alaina Griffin"
+                "type": "s",
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "ALGA (FAF)",
+                "teacher": "Tommy Grant"
             },
             "5": {
                 "type": "",
@@ -736,9 +736,9 @@
                 "teacher": ""
             },
             "6": {
-                "type": "s",
-                "name": "ALGA (FAF)",
-                "teacher": "Tommy Grant"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -756,107 +756,107 @@
             },
             "2": {
                 "type": "c",
-                "name": "ALGA (FAF)",
-                "teacher": "Tommy Grant"
-            },
-            "3": {
-                "type": "p",
-                "name": "PCAIT (FAF)",
-                "teacher": "Alaina Griffin"
-            },
-            "4": {
-                "type": "s",
                 "name": "PSA (FAF)",
                 "teacher": "Ayleen Lambert"
             },
-            "5": {
+            "3": {
+                "type": "s",
+                "name": "AM1 (FAF)",
+                "teacher": "Savannah Guzman"
+            },
+            "4": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            },
+            "5": {
+                "type": "l",
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
             },
             "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
             },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "EIA (FAF)",
+                "teacher": "Jude Church"
             }
         },
         "Tuesday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "c",
-                "name": "EIA (FAF)",
-                "teacher": "Jude Church"
-            },
-            "3": {
-                "type": "c",
-                "name": "AM1 (FAF)",
-                "teacher": "Savannah Guzman"
-            },
-            "4": {
-                "type": "s",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
-            },
-            "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "7": {
-                "type": "s",
-                "name": "ALGA (FAF)",
-                "teacher": "Tommy Grant"
-            }
-        },
-        "Wednesday": {
-            "1": {
-                "type": "c",
+                "type": "l",
                 "name": "MD (FAF)",
                 "teacher": "Ayden Gutierrez"
             },
             "2": {
-                "type": "s",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
-            },
-            "3": {
                 "type": "p",
                 "name": "PCAIT (FAF)",
                 "teacher": "Alaina Griffin"
             },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
             "4": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
             "5": {
-                "type": "c",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
-                "type": "l",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "s",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "7": {
-                "type": "s",
-                "name": "AM1 (FAF)",
-                "teacher": "Savannah Guzman"
+                "type": "p",
+                "name": "PCAIT (FAF)",
+                "teacher": "Alaina Griffin"
+            }
+        },
+        "Wednesday": {
+            "1": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "c",
+                "name": "ALGA (FAF)",
+                "teacher": "Tommy Grant"
+            },
+            "4": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "5": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         },
         "Thursday": {
@@ -866,19 +866,19 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "Ed. Fizic\u0103 1",
+                "teacher": "Madilyn Ramsey"
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "5": {
                 "type": "",
@@ -886,9 +886,9 @@
                 "teacher": ""
             },
             "6": {
-                "type": "l",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
+                "type": "s",
+                "name": "L. Engleza (FAF)",
+                "teacher": "Lucille Archer"
             },
             "7": {
                 "type": "",
@@ -903,53 +903,53 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "ALGA (FAF)",
+                "teacher": "Tommy Grant"
             },
             "3": {
+                "type": "c",
+                "name": "AM1 (FAF)",
+                "teacher": "Savannah Guzman"
+            },
+            "4": {
+                "type": "l",
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
+            },
+            "5": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
-            "4": {
+            "6": {
                 "type": "s",
-                "name": "Ed. Fizic\u0103 1",
-                "teacher": "Madilyn Ramsey"
-            },
-            "5": {
-                "type": "c",
                 "name": "PSA (FAF)",
                 "teacher": "Ayleen Lambert"
             },
-            "6": {
-                "type": "l",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
-            },
             "7": {
-                "type": "s",
-                "name": "L. Engleza (FAF)",
-                "teacher": "Lucille Archer"
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         }
     },
     "FAF-233": {
         "Monday": {
             "1": {
-                "type": "s",
-                "name": "ALGA (FAF)",
-                "teacher": "Tommy Grant"
+                "type": "p",
+                "name": "PCAIT (FAF)",
+                "teacher": "Alaina Griffin"
             },
             "2": {
-                "type": "l",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
-                "type": "s",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "4": {
                 "type": "",
@@ -962,7 +962,7 @@
                 "teacher": ""
             },
             "6": {
-                "type": "s",
+                "type": "l",
                 "name": "MD (FAF)",
                 "teacher": "Ayden Gutierrez"
             },
@@ -974,56 +974,19 @@
         },
         "Tuesday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "c",
-                "name": "EIA (FAF)",
-                "teacher": "Jude Church"
-            },
-            "5": {
-                "type": "s",
-                "name": "L. Engleza (FAF)",
-                "teacher": "Lucille Archer"
-            },
-            "6": {
                 "type": "p",
                 "name": "PCAIT (FAF)",
                 "teacher": "Alaina Griffin"
             },
-            "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            }
-        },
-        "Wednesday": {
-            "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "c",
-                "name": "PC (FAF)",
-                "teacher": "Mario Espinoza"
-            },
             "3": {
                 "type": "s",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
             },
             "4": {
                 "type": "",
@@ -1036,9 +999,46 @@
                 "teacher": "Mario Espinoza"
             },
             "6": {
-                "type": "p",
-                "name": "PCAIT (FAF)",
-                "teacher": "Alaina Griffin"
+                "type": "l",
+                "name": "PSA (FAF)",
+                "teacher": "Ayleen Lambert"
+            },
+            "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            }
+        },
+        "Wednesday": {
+            "1": {
+                "type": "s",
+                "name": "Ed. Fizic\u0103 1",
+                "teacher": "Madilyn Ramsey"
+            },
+            "2": {
+                "type": "s",
+                "name": "ALGA (FAF)",
+                "teacher": "Tommy Grant"
+            },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "4": {
+                "type": "c",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
+            },
+            "5": {
+                "type": "c",
+                "name": "EIA (FAF)",
+                "teacher": "Jude Church"
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -1053,14 +1053,14 @@
                 "teacher": ""
             },
             "2": {
-                "type": "s",
-                "name": "AM1 (FAF)",
-                "teacher": "Savannah Guzman"
+                "type": "c",
+                "name": "ALGA (FAF)",
+                "teacher": "Tommy Grant"
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "AM1 (FAF)",
+                "teacher": "Savannah Guzman"
             },
             "4": {
                 "type": "",
@@ -1068,9 +1068,9 @@
                 "teacher": ""
             },
             "5": {
-                "type": "l",
-                "name": "PSA (FAF)",
-                "teacher": "Ayleen Lambert"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
                 "type": "c",
@@ -1079,35 +1079,35 @@
             },
             "7": {
                 "type": "c",
-                "name": "ALGA (FAF)",
-                "teacher": "Tommy Grant"
+                "name": "PC (FAF)",
+                "teacher": "Mario Espinoza"
             }
         },
         "Friday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "c",
+                "type": "s",
                 "name": "AM1 (FAF)",
                 "teacher": "Savannah Guzman"
             },
-            "3": {
-                "type": "s",
-                "name": "Ed. Fizic\u0103 1",
-                "teacher": "Madilyn Ramsey"
-            },
-            "4": {
-                "type": "c",
-                "name": "MD (FAF)",
-                "teacher": "Ayden Gutierrez"
-            },
-            "5": {
+            "2": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "4": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "5": {
+                "type": "s",
+                "name": "MD (FAF)",
+                "teacher": "Ayden Gutierrez"
             },
             "6": {
                 "type": "",
@@ -1115,9 +1115,9 @@
                 "teacher": ""
             },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "L. Engleza (FAF)",
+                "teacher": "Lucille Archer"
             }
         }
     },
@@ -1125,8 +1125,8 @@
         "Monday": {
             "1": {
                 "type": "s",
-                "name": "POO",
-                "teacher": "Kara Whitney"
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
             },
             "2": {
                 "type": "",
@@ -1134,14 +1134,14 @@
                 "teacher": ""
             },
             "3": {
-                "type": "c",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
+                "type": "l",
+                "name": "POO",
+                "teacher": "Kara Whitney"
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
             },
             "5": {
                 "type": "",
@@ -1149,14 +1149,14 @@
                 "teacher": ""
             },
             "6": {
-                "type": "l",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
+                "type": "s",
+                "name": "Procese stochastice",
+                "teacher": "Memphis Nash"
             }
         },
         "Tuesday": {
@@ -1166,61 +1166,61 @@
                 "teacher": ""
             },
             "2": {
+                "type": "l",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
+            },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "4": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "5": {
                 "type": "c",
                 "name": "CDE",
                 "teacher": "Luciano Harrell"
             },
-            "3": {
+            "6": {
                 "type": "l",
                 "name": "Analiza \u0219i sinteza dispozitivelor numerice",
                 "teacher": "Savanna Griffith"
             },
-            "4": {
-                "type": "s",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
-            },
-            "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "DPI",
+                "teacher": "Franklin Gray"
             }
         },
         "Wednesday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
-            },
-            "3": {
-                "type": "c",
-                "name": "Procese stochastice",
-                "teacher": "Memphis Nash"
-            },
-            "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "5": {
-                "type": "c",
+                "type": "l",
                 "name": "CDE",
                 "teacher": "Luciano Harrell"
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "4": {
+                "type": "c",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
+            },
+            "5": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
                 "type": "",
@@ -1228,68 +1228,31 @@
                 "teacher": ""
             },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
             }
         },
         "Thursday": {
             "1": {
-                "type": "c",
-                "name": "DPI",
-                "teacher": "Franklin Gray"
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
             },
             "2": {
-                "type": "c",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "5": {
-                "type": "l",
+                "type": "s",
                 "name": "POO",
                 "teacher": "Kara Whitney"
             },
-            "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "7": {
-                "type": "l",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
-            }
-        },
-        "Friday": {
-            "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "s",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
-            },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "5": {
                 "type": "",
@@ -1297,33 +1260,70 @@
                 "teacher": ""
             },
             "6": {
-                "type": "s",
+                "type": "c",
                 "name": "Procese stochastice",
                 "teacher": "Memphis Nash"
             },
             "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            }
+        },
+        "Friday": {
+            "1": {
+                "type": "c",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "4": {
                 "type": "c",
                 "name": "POO",
                 "teacher": "Kara Whitney"
+            },
+            "5": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         }
     },
     "CR-222": {
         "Monday": {
             "1": {
+                "type": "c",
+                "name": "POO",
+                "teacher": "Kara Whitney"
+            },
+            "2": {
+                "type": "s",
+                "name": "Procese stochastice",
+                "teacher": "Memphis Nash"
+            },
+            "3": {
                 "type": "",
                 "name": "",
                 "teacher": ""
-            },
-            "2": {
-                "type": "l",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
-            },
-            "3": {
-                "type": "s",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
             },
             "4": {
                 "type": "",
@@ -1331,19 +1331,19 @@
                 "teacher": ""
             },
             "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "7": {
                 "type": "c",
                 "name": "CDE",
                 "teacher": "Luciano Harrell"
+            },
+            "6": {
+                "type": "l",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
+            },
+            "7": {
+                "type": "c",
+                "name": "Procese stochastice",
+                "teacher": "Memphis Nash"
             }
         },
         "Tuesday": {
@@ -1353,14 +1353,14 @@
                 "teacher": ""
             },
             "2": {
-                "type": "l",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
-                "type": "c",
-                "name": "DPI",
-                "teacher": "Franklin Gray"
+                "type": "l",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
             },
             "4": {
                 "type": "",
@@ -1368,19 +1368,19 @@
                 "teacher": ""
             },
             "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
             },
             "6": {
+                "type": "l",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
+            },
+            "7": {
                 "type": "",
                 "name": "",
                 "teacher": ""
-            },
-            "7": {
-                "type": "c",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
             }
         },
         "Wednesday": {
@@ -1390,9 +1390,9 @@
                 "teacher": ""
             },
             "2": {
-                "type": "s",
-                "name": "POO",
-                "teacher": "Kara Whitney"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
                 "type": "",
@@ -1400,9 +1400,9 @@
                 "teacher": ""
             },
             "4": {
-                "type": "l",
-                "name": "POO",
-                "teacher": "Kara Whitney"
+                "type": "c",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
             },
             "5": {
                 "type": "c",
@@ -1411,35 +1411,35 @@
             },
             "6": {
                 "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "7": {
                 "type": "s",
-                "name": "Procese stochastice",
-                "teacher": "Memphis Nash"
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
             }
         },
         "Thursday": {
             "1": {
-                "type": "s",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "2": {
-                "type": "c",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "DPI",
+                "teacher": "Franklin Gray"
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "5": {
                 "type": "",
@@ -1447,14 +1447,14 @@
                 "teacher": ""
             },
             "6": {
-                "type": "c",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "Procese stochastice",
-                "teacher": "Memphis Nash"
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         },
         "Friday": {
@@ -1464,24 +1464,24 @@
                 "teacher": ""
             },
             "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "c",
+                "type": "s",
                 "name": "POO",
                 "teacher": "Kara Whitney"
             },
-            "4": {
+            "3": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
+            "4": {
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
+            },
             "5": {
-                "type": "l",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "6": {
                 "type": "",
@@ -1489,43 +1489,43 @@
                 "teacher": ""
             },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "l",
+                "name": "POO",
+                "teacher": "Kara Whitney"
             }
         }
     },
     "CR-223": {
         "Monday": {
             "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "c",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
-            },
-            "3": {
-                "type": "c",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
-            },
-            "4": {
-                "type": "c",
-                "name": "DPI",
-                "teacher": "Franklin Gray"
-            },
-            "5": {
                 "type": "s",
                 "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
                 "teacher": "Axl Moyer"
             },
-            "6": {
+            "2": {
+                "type": "c",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
+            },
+            "3": {
+                "type": "c",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
+            },
+            "4": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            },
+            "5": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "6": {
+                "type": "l",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
             },
             "7": {
                 "type": "c",
@@ -1535,34 +1535,34 @@
         },
         "Tuesday": {
             "1": {
+                "type": "c",
+                "name": "DPI",
+                "teacher": "Franklin Gray"
+            },
+            "2": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
-            "2": {
+            "3": {
                 "type": "s",
                 "name": "Analiza \u0219i sinteza dispozitivelor numerice",
                 "teacher": "Savanna Griffith"
             },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
             "4": {
-                "type": "c",
+                "type": "l",
                 "name": "MN",
                 "teacher": "Jeffery Roy"
             },
             "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
                 "type": "s",
                 "name": "Procese stochastice",
                 "teacher": "Memphis Nash"
+            },
+            "6": {
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
                 "type": "",
@@ -1572,14 +1572,51 @@
         },
         "Wednesday": {
             "1": {
-                "type": "c",
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "s",
                 "name": "POO",
                 "teacher": "Kara Whitney"
             },
+            "4": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "5": {
+                "type": "c",
+                "name": "Procese stochastice",
+                "teacher": "Memphis Nash"
+            },
+            "6": {
+                "type": "c",
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
+            },
+            "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            }
+        },
+        "Thursday": {
+            "1": {
+                "type": "c",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
+            },
             "2": {
-                "type": "l",
-                "name": "POO",
-                "teacher": "Kara Whitney"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "3": {
                 "type": "",
@@ -1602,58 +1639,21 @@
                 "teacher": ""
             },
             "7": {
-                "type": "c",
-                "name": "Procese stochastice",
-                "teacher": "Memphis Nash"
-            }
-        },
-        "Thursday": {
-            "1": {
                 "type": "",
                 "name": "",
                 "teacher": ""
-            },
-            "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "l",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
-            },
-            "4": {
-                "type": "l",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
-            },
-            "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "6": {
-                "type": "c",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
-            },
-            "7": {
-                "type": "l",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
             }
         },
         "Friday": {
             "1": {
-                "type": "s",
-                "name": "POO",
-                "teacher": "Kara Whitney"
-            },
-            "2": {
                 "type": "",
                 "name": "",
                 "teacher": ""
+            },
+            "2": {
+                "type": "l",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "3": {
                 "type": "",
@@ -1666,9 +1666,9 @@
                 "teacher": ""
             },
             "5": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "c",
+                "name": "POO",
+                "teacher": "Kara Whitney"
             },
             "6": {
                 "type": "",
@@ -1676,9 +1676,9 @@
                 "teacher": ""
             },
             "7": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "l",
+                "name": "POO",
+                "teacher": "Kara Whitney"
             }
         }
     },
@@ -1691,45 +1691,45 @@
             },
             "2": {
                 "type": "c",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
-            },
-            "3": {
-                "type": "c",
                 "name": "CDE",
                 "teacher": "Luciano Harrell"
             },
+            "3": {
+                "type": "l",
+                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
+                "teacher": "Hanna Welch"
+            },
             "4": {
+                "type": "s",
+                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
+                "teacher": "Hanna Welch"
+            },
+            "5": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
-            "5": {
-                "type": "l",
-                "name": "MN",
-                "teacher": "Jeffery Roy"
-            },
             "6": {
-                "type": "s",
-                "name": "Ed. Fizic\u01033",
-                "teacher": "Ishaan Novak"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "7": {
-                "type": "s",
-                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
-                "teacher": "Hanna Welch"
+                "type": "c",
+                "name": "Bazele statului \u0219i dreptului",
+                "teacher": "Sarah Strong"
             }
         },
         "Tuesday": {
             "1": {
-                "type": "l",
-                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
-                "teacher": "Hanna Welch"
+                "type": "",
+                "name": "",
+                "teacher": ""
             },
             "2": {
                 "type": "l",
-                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
-                "teacher": "Hanna Welch"
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "3": {
                 "type": "",
@@ -1737,61 +1737,61 @@
                 "teacher": ""
             },
             "4": {
-                "type": "l",
+                "type": "c",
                 "name": "Analiza \u0219i sinteza dispozitivelor numerice",
                 "teacher": "Savanna Griffith"
             },
             "5": {
-                "type": "s",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
-            },
-            "6": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "7": {
-                "type": "l",
-                "name": "POO",
-                "teacher": "Kara Whitney"
-            }
-        },
-        "Wednesday": {
-            "1": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "2": {
-                "type": "c",
-                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
-                "teacher": "Hanna Welch"
-            },
-            "3": {
                 "type": "c",
                 "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
                 "teacher": "Axl Moyer"
             },
+            "6": {
+                "type": "c",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
+            },
+            "7": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            }
+        },
+        "Wednesday": {
+            "1": {
+                "type": "l",
+                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
+                "teacher": "Hanna Welch"
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "c",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
+            },
             "4": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
             "5": {
-                "type": "c",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
-            },
-            "6": {
                 "type": "",
                 "name": "",
                 "teacher": ""
             },
+            "6": {
+                "type": "l",
+                "name": "POO",
+                "teacher": "Kara Whitney"
+            },
             "7": {
-                "type": "c",
-                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
-                "teacher": "Savanna Griffith"
+                "type": "",
+                "name": "",
+                "teacher": ""
             }
         },
         "Thursday": {
@@ -1799,43 +1799,6 @@
                 "type": "",
                 "name": "",
                 "teacher": ""
-            },
-            "2": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "3": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
-            },
-            "5": {
-                "type": "c",
-                "name": "Bazele statului \u0219i dreptului",
-                "teacher": "Sarah Strong"
-            },
-            "6": {
-                "type": "s",
-                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
-                "teacher": "Axl Moyer"
-            },
-            "7": {
-                "type": "l",
-                "name": "CDE",
-                "teacher": "Luciano Harrell"
-            }
-        },
-        "Friday": {
-            "1": {
-                "type": "s",
-                "name": "POO",
-                "teacher": "Kara Whitney"
             },
             "2": {
                 "type": "c",
@@ -1848,14 +1811,51 @@
                 "teacher": ""
             },
             "4": {
-                "type": "",
-                "name": "",
-                "teacher": ""
+                "type": "s",
+                "name": "Analiza \u0219i sinteza dispozitivelor numerice",
+                "teacher": "Savanna Griffith"
             },
             "5": {
                 "type": "c",
                 "name": "POO",
                 "teacher": "Kara Whitney"
+            },
+            "6": {
+                "type": "s",
+                "name": "Ed. Fizic\u01033",
+                "teacher": "Ishaan Novak"
+            },
+            "7": {
+                "type": "l",
+                "name": "CDE",
+                "teacher": "Luciano Harrell"
+            }
+        },
+        "Friday": {
+            "1": {
+                "type": "l",
+                "name": "MN",
+                "teacher": "Jeffery Roy"
+            },
+            "2": {
+                "type": "",
+                "name": "",
+                "teacher": ""
+            },
+            "3": {
+                "type": "s",
+                "name": "Filosofie \u0219i g\u00e2ndire inginereasc\u0103",
+                "teacher": "Axl Moyer"
+            },
+            "4": {
+                "type": "s",
+                "name": "POO",
+                "teacher": "Kara Whitney"
+            },
+            "5": {
+                "type": "c",
+                "name": "Traductoare \u0219i m\u0103sur\u0103tori",
+                "teacher": "Hanna Welch"
             },
             "6": {
                 "type": "",

@@ -39,16 +39,16 @@ class ScheduleMaker:
                         continue
                     if t.get(lesson) == 1:
                         if t.get("theoryhrs") > 0:
-                            schedule.loc[lesson, groupentry] = "c " + t.get("subject_name") #+ ", " + t.get("teacher_name")
+                            schedule.loc[lesson, groupentry] = "c " + t.get("subject_name") + ", " + t.get("teacher_name")
                             t["theoryhrs"] -= 1
                         elif t.get("seminarhrs") > 0:
-                            schedule.loc[lesson, groupentry] = "s " + t.get("subject_name") #+ ", " + t.get("teacher_name")
+                            schedule.loc[lesson, groupentry] = "s " + t.get("subject_name") + ", " + t.get("teacher_name")
                             t["seminarhrs"] -= 1
                         elif t.get("labhrs") > 0:
-                            schedule.loc[lesson, groupentry] = "l " + t.get("subject_name") #+ ", " + t.get("teacher_name")
+                            schedule.loc[lesson, groupentry] = "l " + t.get("subject_name") + ", " + t.get("teacher_name")
                             t["labhrs"] -= 1
                         elif t.get("projecthrs") > 0:
-                            schedule.loc[lesson, groupentry] = "p " + t.get("subject_name") #+ ", " + t.get("teacher_name")
+                            schedule.loc[lesson, groupentry] = "p " + t.get("subject_name") + ", " + t.get("teacher_name")
                             t["projecthrs"] -= 1
                         else:
                             continue
