@@ -1,5 +1,7 @@
-from utils import *
-
+# from utils import *
+from database.scripts.dbclasses.Database import Database
+import numpy as np
+import pandas as pd
 
 class Selector:
     def __init__(self):
@@ -57,7 +59,10 @@ class Selector:
         teachers_df = teachers_df.loc[teachers_df["id"].isin(
             subjects_df["id"].values)]
 
-        return subjects_df, teachers_df, student_group_df
+        teachers_subjects_df = pd.merge(teachers_df, subjects_df, left_on="subject", right_on="id").rename(columns={
+    "name_x": "teacher_name", "name_y": "subject_name", "id_x": "teacher_id", "id_y": "subject_id", "theory_y": "theoryhrs", "seminar_y": "seminarhrs", "lab_y": "labhrs", "project": "projecthrs", "theory_x": "theory", "seminar_x": "seminar", "lab_x": "lab"})
+
+        return subjects_df, teachers_df, student_group_df, teachers_subjects_df
 
     def get_groups_dfs(self, groupnames: list,semester:list) -> dict:
         """Get dataframes for multiple groups in form of a dictionary containing pandas DataFrames
@@ -72,9 +77,10 @@ class Selector:
             raise Exception("The number of groups and semesters must be equal")
         groups_dfs = {groupname : {"subjects":None,"teachers":None,"group":None} for groupname in groupnames}
         for i in range(len(groupnames)):
-            subjects_df, teachers_df, student_group_df = self.get_group_dfs(
+            s,t,g,tsj = self.get_group_dfs(
                 groupnames[i],semester[i])
-            groups_dfs[groupnames[i]]["subjects"]=subjects_df
-            groups_dfs[groupnames[i]]["teachers"]=teachers_df
-            groups_dfs[groupnames[i]]["group"]=student_group_df
+            groups_dfs[groupnames[i]]["subjects"]=s
+            groups_dfs[groupnames[i]]["teachers"]=t
+            groups_dfs[groupnames[i]]["group"]=g
+            groups_dfs[groupnames[i]]["map"]=tsj
         return groups_dfs
