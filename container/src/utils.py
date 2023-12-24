@@ -31,7 +31,6 @@ def apply_subject_round(df):
 
 def get_needed_dfs():
     db = Database()
-
     """Extract data from database"""
     teachers_df = db.extract.teachers()
     groups_df = db.extract.groups()
@@ -39,7 +38,7 @@ def get_needed_dfs():
 
     subjects_df = apply_subject_round(subjects_df)
 
-    student_group = groups_df.loc[groups_df["name"]=="FAF-223"]
+    student_group = groups_df.loc[groups_df["name"]=="FAF-233"]
 
     gr_sub_map_df = db.extract.group_subjects_maptable()
     gr_sub_map_df = gr_sub_map_df.loc[gr_sub_map_df["group_id"]
@@ -47,9 +46,12 @@ def get_needed_dfs():
 
     subject_ids = gr_sub_map_df["subject_id"]
     subjects_df = subjects_df.loc[(subjects_df["id"].isin(
-        subject_ids)) & (subjects_df["semester"] == 3)]
+        subject_ids)) & (subjects_df["semester"] == 1)]
 
     teachers_df = teachers_df.loc[teachers_df["id"].isin(
         subjects_df["id"].values)]
 
     return subjects_df, teachers_df, student_group
+
+# subjects_df, teachers_df, student_group = get_needed_dfs()
+# print(teachers_df)
