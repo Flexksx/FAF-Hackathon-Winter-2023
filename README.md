@@ -1,2 +1,2 @@
-# fafhack2023
-FAF Hackathon 2023
+# 2023 Winter FAF Hackaton
+Implement a schedule creation algorithm for the university
